@@ -42,6 +42,8 @@ modules:
       keep-existing-routes: true
       disk-quota: 256M
       memory: 256M
+    build-parameters:
+      ignore: ["default-env.json", ".env"]
     requires:
       - name: srv-api
         group: destinations
@@ -64,7 +66,7 @@ resources:
       service-plan: application
       path: ./xs-security.json
       config:
-        xsappname: MyHANAApp-${org}-${space}
+        xsappname: myhanaapp
         tenant-mode: dedicated
         oauth2-configuration:
           redirect-uris:
