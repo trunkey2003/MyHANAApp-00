@@ -24,6 +24,7 @@
           "x509"
       ],
       "redirect-uris": [
+          "http://localhost:5000/",
           "https://*.applicationstudio.cloud.sap/**",
           "https://*.hana.ondemand.com/**"
       ]
